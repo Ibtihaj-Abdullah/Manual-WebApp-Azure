@@ -16,16 +16,16 @@ This is a guide on how to deploy a basic php app on Azure using App Service
       • Location “Canada Central” 
       • SKU: “Basic Tier” 
 
-2. Network Configuration 
+2. Network Configuration <br>
     • Configuring NSG: 
     • Name: “nsg-task1 ” 
     • Location: “East-US” 
-    • Rules:  
+    • Rules:  <br>
       • Except the inbound and outbound default rules: 
         • Inbound: Allow HTTP at Port 80, HTTPS at Port 443 and SQL at Port 3306   
         • Outbound: Allow SQL at 3306 
 
-3. App Creation and Deployment. 
+3. App Creation and Deployment. <br>
     • Forked the basic php hello world code on github and deployed it on app service.  
     • Inserted a DB connection code in php and deployed it again.  
     • Resolved all the issues.  
@@ -37,15 +37,15 @@ This is a guide on how to deploy a basic php app on Azure using App Service
     • Resolved the bugs and other issues. 
     • The app fetched the records and displayed them on the web app. 
  
-4. Load Balancing/Scaling 
+4. Load Balancing/Scaling <br>
     • The scaling option was disabled for the basic tier however the scaling can be done via scale out tab in left pane and choose conditions for scaling out up to desired specifications. 
 
-5. Monitoring and Diagnostics 
+5. Monitoring and Diagnostics <br>
     • Azure monitoring enabled with the option to get metrics in the metrics tab (left pane). 
     • Created an action group resource which sent the email to my email address on alert triggering. 
     • Created the alert rule to trigger alert on 70% CPU consumption metric and linked it to the action group. 
 
-6. Backup and Recovery 
+6. Backup and Recovery <br>
     • MySQL Flexible Server allows us to automatically backup database once daily. We can also do backup on demand in recovery tab in left pane in db server. 
 
 7. Other resources
