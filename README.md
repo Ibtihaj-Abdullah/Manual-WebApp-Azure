@@ -1,9 +1,9 @@
 # Manual-WebApp-Azure
 This is a guide on how to deploy a basic php app on Azure using App Service
 
-1. Setup Azure Resources 
-    • Setup Resource-Group named “task1”. Location: “East-US” 
-    • Than setup an app service. Category Web App + Database as this category creates a linked database via private link to the app service and a vnet as well. Create a MYSQL Flxeible server which is highly managed by Azure. 
+1. Setup Azure Resources <br>
+    • Setup Resource-Group named “task1”. Location: “East-US” <br>
+    • Than setup an app service. Category Web App + Database as this category creates a linked database via private link to the app service and a vnet as well. Create a MYSQL Flxeible server which is highly managed by Azure. <br>
     • Azure Web App + Database service;  
       • Resource-Group: “task1” 
       • Name: “app1-task1” 
