@@ -26,24 +26,24 @@ This is a guide on how to deploy a basic php app on Azure using App Service
         • Outbound: Allow SQL at 3306 
 
 3. App Creation and Deployment. <br>
-    • Forked the basic php hello world code on github and deployed it on app service.  
-    • Inserted a DB connection code in php and deployed it again.  
-    • Resolved all the issues.  
-    • Installed MySQL Workbench to connect to the DB to edit records. 
-    • Used SSL Certificates, enforcing and other credentials to access Azure DB through MySQL WB.  
-    • Allowed public access to the DB Server at port 3306 for connecting to the MySQL WB through SSL/TLS (Added the client IP(own IP) to allowed connections).  
-    • After DB connection to WB, added records to the DB 
-    • Edited the code to fetch records and display them on the web app. 
-    • Resolved the bugs and other issues. 
-    • The app fetched the records and displayed them on the web app. 
+    • Fork the basic php hello world code in the repo and deploy it on app service.  
+    • Insert a DB connection code in php and deploy it again.  
+    • Resolv all the issues.  
+    • Install MySQL Workbench to connect to the DB to edit records. 
+    • Use SSL Certificates, enforcing and other credentials to access Azure DB through MySQL WB.  
+    • Allow public access to the DB Server at port 3306 for connecting to the MySQL WB through SSL/TLS (Added the client IP(own IP) to allowed connections).  
+    • After DB connection to WB, add records to the DB 
+    • Edit the code to fetch records and display them on the web app. 
+    • Resolv the bugs and other issues. 
+    • The app fetches the records and displays them on the web app. 
  
 4. Load Balancing/Scaling <br>
-    • The scaling option was disabled for the basic tier however the scaling can be done via scale out tab in left pane and choose conditions for scaling out up to desired specifications. 
+    • The scaling option is disabled for the basic tier however the scaling can be done via scale out tab in left pane and choose conditions for scaling out up to desired specifications. 
 
 5. Monitoring and Diagnostics <br>
-    • Azure monitoring enabled with the option to get metrics in the metrics tab (left pane). 
-    • Created an action group resource which sent the email to my email address on alert triggering. 
-    • Created the alert rule to trigger alert on 70% CPU consumption metric and linked it to the action group. 
+    • Enable Azure monitoring with the option to get metrics in the metrics tab (left pane). 
+    • Creat an action group resource which sent the email to my email address on alert triggering. 
+    • Creat the alert rule to trigger alert on 70% CPU consumption metric and linked it to the action group. 
 
 6. Backup and Recovery <br>
     • MySQL Flexible Server allows us to automatically backup database once daily. We can also do backup on demand in recovery tab in left pane in db server. 
